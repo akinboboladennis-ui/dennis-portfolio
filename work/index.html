@@ -1008,7 +1008,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
   ta.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();form.requestSubmit?form.requestSubmit():form.dispatchEvent(new Event('submit'))}});
   form.addEventListener('submit',function(e){e.preventDefault();var t=ta.value.trim();if(!t||st.busy)return;ta.value='';ta.style.height='auto';sendBtn.disabled=true;send(t)});
   function api(input){
-    var body={assistantId:A.assistantId,input:input};if(st.chatId)body.previousChatId=st.chatId;
+    var body={assistantId:A.assistantId,input:input};if(st.sid)body.sessionId=st.sid;
     return fetch('https://api.vapi.ai/chat/web',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+A.publicKey},body:JSON.stringify(body)})
       .then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j&&j.message||('HTTP '+r.status));return j})});
   }
@@ -1016,7 +1016,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
   function send(t){
     if(!st.started)st.started=Date.now();
     st.msgs.push({r:'u',t:t});st.busy=1;st.dirty=1;st.last=Date.now();save();render();clearTimeout(tmr);
-    api(t).then(function(j){st.chatId=j.id||st.chatId;st.msgs.push({r:'a',t:textOf(j)||'…'});})
+    api(t).then(function(j){st.chatId=j.id||st.chatId;st.sid=j.sessionId||st.sid;st.msgs.push({r:'a',t:textOf(j)||'…'});})
       .catch(function(){st.msgs.push({r:'a',err:1,t:'Sorry, I couldn\'t reply just now. You can WhatsApp Dennis or book a call from the Contact page.'})})
       .then(function(){st.busy=0;st.last=Date.now();save();render();scheduleSummary(IDLE)});
   }
@@ -1024,7 +1024,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
   /* ---------- chat summary → Dennis's inbox (via Make webhook) ---------- */
   function transcript(){return ['AI: '+GREET].concat(st.msgs.filter(function(m){return !m.err}).map(function(m){return (m.r==='u'?'Visitor: ':'AI: ')+m.t})).join('\n')}
   function report(summary,reason){return {message:{type:'end-of-call-report',channel:'Website chat',endedReason:reason,durationSeconds:Math.round((Date.now()-(st.started||Date.now()))/1000),
-    analysis:{summary:summary},transcript:transcript(),recordingUrl:'',page:location.href,call:{id:st.chatId||'chat'}}}}
+    analysis:{summary:summary},transcript:transcript(),recordingUrl:'',page:location.href,call:{id:st.sid||st.chatId||'chat'}}}}
   var IDLE=150000, tmr=null;
   function scheduleSummary(ms){clearTimeout(tmr);if(!st.dirty||!A.summaryWebhook)return;tmr=setTimeout(function(){sendSummary('chat idle/closed')},ms)}
   function sendSummary(reason,beacon){
@@ -1033,8 +1033,8 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
     var post=function(sum){var data=JSON.stringify(report(sum,reason));
       if(beacon&&navigator.sendBeacon){var fp=new URLSearchParams(),r=report(sum,reason).message;(function fl(o,pre){for(var k in o){var v=o[k],key=pre?pre+']['+k:k;if(v&&typeof v==='object')fl(v,key);else fp.append('message['+key+']',v==null?'':String(v))}})(r,'');navigator.sendBeacon(A.summaryWebhook,fp);return}
       try{fetch(A.summaryWebhook,{method:'POST',headers:{'Content-Type':'application/json'},body:data,keepalive:true})}catch(e){}};
-    if(beacon||!st.chatId)return post(beacon?'(Visitor left the site before an AI summary could be generated, see transcript.)':'');
-    var body={assistantId:A.assistantId,previousChatId:st.chatId,input:'[Internal note, not from the visitor] Write a 2-4 sentence summary of this conversation for Dennis: who the visitor is, their business, what they need, any contact details, booking status and suggested next step. Output only the summary.'};
+    if(beacon||!st.sid)return post(beacon?'(Visitor left the site before an AI summary could be generated, see transcript.)':'');
+    var body={assistantId:A.assistantId,sessionId:st.sid,input:'[Internal note, not from the visitor] Write a 2-4 sentence summary of this conversation for Dennis: who the visitor is, their business, what they need, any contact details, booking status and suggested next step. Output only the summary.'};
     fetch('https://api.vapi.ai/chat/web',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+A.publicKey},body:JSON.stringify(body)})
       .then(function(r){return r.json()}).then(function(j){post(textOf(j))}).catch(function(){post('')});
   }
