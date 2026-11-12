@@ -763,6 +763,7 @@
   /* ---------- CONTACT ---------- */
   email: "info@dennisakinbobola.com",
   formEmail: "info@dennisakinbobola.com",   // every form submission is emailed here (FormSubmit). First submission sends you a one-time "Activate" email.
+  contactHook: "https://hook.eu2.make.com/ejlqtsb5n3ppseobr5he3cul1lkyqk6b",  // Make scenario 10155337: emails info@ via Spacemail SMTP
   formWebhook: "",                             // optional: HighLevel Inbound Webhook URL to also create the contact in your CRM
   phone: "+234 807 6455 530",
   whatsapp: "2348076455530",
@@ -1074,12 +1075,13 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
         close();f.reset();if(mob)location.href=url;else window.open(url,'_blank','noopener');});})();
     $$('[data-tel]').forEach(function(a){if(C.phone){a.href='tel:'+(C.phone||'').replace(/[^+\d]/g,'');a.textContent=C.phone}else a.style.display='none'});
 
-    /* forms -> email (FormSubmit) + optional HighLevel webhook */
-    $$('form[data-lead]').forEach(function(form){var msg=$('.fmsg',form),btn=$('button[type=submit]',form);form.addEventListener('submit',function(e){e.preventDefault();var d={};new FormData(form).forEach(function(v,k){d[k]=v});
+    /* forms -> email via Make + Spacemail SMTP (FormSubmit only as fallback) + optional HighLevel webhook */
+    $$('form[data-lead]').forEach(function(form){var msg=$('.fmsg',form),btn=$('button[type=submit]',form);form.addEventListener('submit',function(e){e.preventDefault();var d={};new FormData(form).forEach(function(v,k){if(v!=='')d[k]=v});
       d._subject='New portfolio enquiry from '+(d.name||'a visitor');d._template='table';d._captcha='false';d.page=location.href;
       btn.disabled=true;btn.style.opacity=.6;msg.textContent='Sending…';
       var jobs=[];
-      if(C.formEmail)jobs.push(fetch('https://formsubmit.co/ajax/'+C.formEmail,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;return r.json()}));
+      if(C.contactHook)jobs.push(fetch(C.contactHook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;}));
+      else if(C.formEmail)jobs.push(fetch('https://formsubmit.co/ajax/'+C.formEmail,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;return r.json()}));
       if(C.formWebhook)jobs.push(fetch(C.formWebhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}));
       Promise.all(jobs).then(function(){msg.textContent="Thanks "+(d.name||'')+", your message is in my inbox. I'll reply within 24 hours.";form.reset();})
       .catch(function(){msg.innerHTML='Couldn\'t send from here. Email me at <a href="mailto:'+C.email+'">'+C.email+'</a> or book a call.';})
