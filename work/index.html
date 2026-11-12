@@ -645,8 +645,8 @@
 #dpx .ai-panel{position:fixed;right:22px;bottom:22px;z-index:160;width:410px;height:min(640px,calc(100vh - 44px));display:flex;flex-direction:column;border-radius:26px;overflow:hidden;
   background:radial-gradient(120% 60% at 100% 0%,rgba(37,99,255,.28),transparent 60%),radial-gradient(90% 50% at 0% 100%,rgba(124,196,255,.14),transparent 60%),linear-gradient(180deg,#0b1430 0%,#060a18 100%);
   border:1px solid rgba(124,196,255,.28);box-shadow:0 30px 100px rgba(0,0,0,.6),0 0 80px rgba(37,99,255,.25),inset 0 1px 0 rgba(255,255,255,.08);
-  opacity:0;transform:translateY(24px) scale(.96);transform-origin:bottom right;pointer-events:none;transition:opacity .4s var(--ease),transform .5s var(--ease)}
-#dpx .ai-panel.on{opacity:1;transform:none;pointer-events:auto}
+  opacity:0;visibility:hidden;transform:translateY(24px) scale(.96);transform-origin:bottom right;pointer-events:none;transition:opacity .4s var(--ease),transform .5s var(--ease),visibility 0s linear .5s}
+#dpx .ai-panel.on{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition:opacity .4s var(--ease),transform .5s var(--ease),visibility 0s}
 #dpx .ai-hd{display:flex;align-items:center;gap:12px;padding:18px 18px 14px}
 #dpx .ai-hd .orb{--s:44px}
 #dpx .ai-hd .nm{flex:1;min-width:0}
@@ -667,7 +667,8 @@
 
 #dpx .ai-body{position:relative;flex:1;min-height:0}
 #dpx .ai-view{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateX(-14px);transition:opacity .35s,transform .45s var(--ease)}
-#dpx .ai-view.on{opacity:1;pointer-events:auto;transform:none}
+#dpx .ai-view.on{opacity:1;transform:none}
+#dpx .ai-panel.on .ai-view.on{pointer-events:auto}
 #dpx .ai-view.voice{transform:translateX(14px)}
 #dpx .ai-view.voice.on{transform:none}
 
