@@ -690,7 +690,7 @@
 #dpx .ai-chips button:hover{background:rgba(37,99,255,.28);color:#fff;transform:translateY(-1px)}
 #dpx .ai-in{display:flex;align-items:flex-end;gap:8px;margin:0 14px 10px;padding:6px 6px 6px 14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(140,170,255,.2);transition:border-color .25s,box-shadow .25s}
 #dpx .ai-in:focus-within{border-color:rgba(124,196,255,.6);box-shadow:0 0 0 4px rgba(37,99,255,.15)}
-#dpx .ai-in textarea{flex:1;resize:none;border:0;outline:0;background:none;color:#fff;font:inherit;font-size:14.5px;line-height:1.45;max-height:110px;padding:8px 0}
+#dpx .ai-in textarea{flex:1;resize:none;border:0!important;outline:0!important;box-shadow:none!important;border-radius:0!important;background:none!important;margin:0;width:auto;color:#fff;font:inherit;font-size:14.5px;line-height:1.45;max-height:110px;padding:8px 0}
 #dpx .ai-in textarea::placeholder{color:#7f8db5}
 #dpx .ai-send{width:40px;height:40px;flex:none;border:0;border-radius:13px;background:linear-gradient(135deg,#2563ff,#4f8bff);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 20px rgba(37,99,255,.45);transition:.25s}
 #dpx .ai-send:disabled{opacity:.4;box-shadow:none;cursor:default}
@@ -872,7 +872,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
    '<div class="ai-seg" role="tablist"><span class="pill"></span><button type="button" class="on" data-ai-tab="chat" role="tab">'+ic.chat+'Chat</button><button type="button" data-ai-tab="voice" role="tab">'+ic.mic+'Voice</button></div>'+
    '<div class="ai-body">'+
     '<div class="ai-view chat on"><div class="ai-msgs" aria-live="polite"></div><div class="ai-chips"></div>'+
-     '<form class="ai-in"><textarea rows="1" placeholder="Ask about CRMs, automations or AI agents…" aria-label="Message Aaron"></textarea><button class="ai-send" type="submit" aria-label="Send" disabled>'+ic.send+'</button></form>'+
+     '<form class="ai-in"><textarea rows="1" placeholder="Ask Aaron anything…" aria-label="Message Aaron"></textarea><button class="ai-send" type="submit" aria-label="Send" disabled>'+ic.send+'</button></form>'+
      '<div class="ai-ft">AI assistant, may make mistakes · conversations are shared with Dennis so he can follow up</div></div>'+
     '<div class="ai-view voice"><div class="ai-stage"><div class="ai-big"><span class="glow"></span><span class="ring"></span><span class="ring r2"></span><span class="orb"></span></div>'+
      '<div class="ai-st">Talk to Aaron</div><div class="ai-sub">A real-time voice conversation, right in your browser. Calls last up to 3 minutes.</div><div class="ai-cap"></div></div>'+
