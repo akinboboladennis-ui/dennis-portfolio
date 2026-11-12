@@ -919,7 +919,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
     if(!st.dirty||!A.summaryWebhook||!st.msgs.some(function(m){return m.r==='u'}))return;
     st.dirty=0;save();
     var post=function(sum){var data=JSON.stringify(report(sum,reason));
-      if(beacon&&navigator.sendBeacon){navigator.sendBeacon(A.summaryWebhook,new Blob([data],{type:'application/json'}));return}
+      if(beacon&&navigator.sendBeacon){var fp=new URLSearchParams(),r=report(sum,reason).message;(function fl(o,pre){for(var k in o){var v=o[k],key=pre?pre+']['+k:k;if(v&&typeof v==='object')fl(v,key);else fp.append('message['+key+']',v==null?'':String(v))}})(r,'');navigator.sendBeacon(A.summaryWebhook,fp);return}
       try{fetch(A.summaryWebhook,{method:'POST',headers:{'Content-Type':'application/json'},body:data,keepalive:true})}catch(e){}};
     if(beacon||!st.chatId)return post(beacon?'(Visitor left the site before an AI summary could be generated, see transcript.)':'');
     var body={assistantId:A.assistantId,previousChatId:st.chatId,input:'[Internal note, not from the visitor] Write a 2-4 sentence summary of this conversation for Dennis: who the visitor is, their business, what they need, any contact details, booking status and suggested next step. Output only the summary.'};
