@@ -1,0 +1,79 @@
+# Dennis Akinbobola
+
+> GoHighLevel expert, HighLevel Certified Admin and AI automation developer based in Lagos, Nigeria. Builds CRM systems, workflow automations, integrations and AI voice and chat agents for service businesses (including med spas, chiropractors and clinics), coaches and course creators, and agencies (white-label) in the US, Europe and Australia.
+
+Key facts:
+- Full name: Dennis Akinbobola
+- Role: GoHighLevel Solutions Architect, CRM developer and AI automation architect
+- Credential: HighLevel Certified Admin
+- Upwork: Top Rated Plus, 60+ completed jobs, building CRM and automation systems since 2023
+- Tools: GoHighLevel (Conversation AI, Voice AI, AI Employee), Vapi, Retell AI, OpenAI, n8n, Make, Zapier, HubSpot, Salesforce, Stripe, Twilio
+- Contact: info@dennisakinbobola.com · book a call at https://dennisakinbobola.com/contact/#book
+- Profiles: https://www.linkedin.com/in/dennis-akinbobola · https://www.upwork.com/freelancers/~01dc0d1a878ab919c3
+
+## Main pages
+- [Home](https://dennisakinbobola.com/): overview, featured projects, client reviews
+- [Services](https://dennisakinbobola.com/services/): Hire a GoHighLevel expert for CRM setup, workflow automation, AI voice agents and chatbots, integrations, migrations, funnels and white-label builds.
+- [Work](https://dennisakinbobola.com/work/): GoHighLevel case studies: funnels, CRM migrations, workflow automations, AI agents and white-label HighLevel builds for real clients.
+- [About](https://dennisakinbobola.com/about/): Dennis Akinbobola is a GoHighLevel Solutions Architect and HighLevel Certified Admin in Lagos, Nigeria, Top Rated Plus on Upwork with 60+ completed jobs.
+- [Contact](https://dennisakinbobola.com/contact/): Book a free call with GoHighLevel expert Dennis Akinbobola, or send a message about your CRM, automation or AI agent project. Replies within 24 hours.
+
+## Case studies
+- [The Short Diet](https://dennisakinbobola.com/work/shortdiet/): A complete HighLevel funnel for a new diet-coaching business, built to test six Meta ad angles and show exactly which one brings in qualified leads.
+- [Value Engines](https://dennisakinbobola.com/work/valueengines/): A white-labelled agency workspace: branded dashboard and menus, brand boards and a clean sub-account structure.
+- [CloseBot AI for Orthodontic Clinics](https://dennisakinbobola.com/work/closebot/): A custom CloseBot AI assistant connected to HighLevel to reply to leads and move them toward booked consultations.
+- [Nahal Ashouri Orthodontics](https://dennisakinbobola.com/work/nahal/): A patient-facing practice website built in HighLevel, where every call to action leads to a free consultation booking.
+- [The Powerfull Group](https://dennisakinbobola.com/work/powerfull/): A branded login and member experience for The Powerfull Group's HighLevel account, plus ongoing GHL support.
+- [Lead Nurture Workflows](https://dennisakinbobola.com/work/nurture/): Multi-path nurture workflows that follow up with new leads automatically, built over a long-running automation engagement.
+- [Emcee Directory](https://dennisakinbobola.com/work/emcee/): The HighLevel system behind Emcee Directory: webinar and sales funnels, booking calendars and the Booked & Paid automations that confirm, remind and follow up.
+- [CRM Migrations into HighLevel](https://dennisakinbobola.com/work/migrations/): Moving businesses off other platforms and into HighLevel without losing contacts, pipelines or funnels.
+- [RNR Online Portal](https://dennisakinbobola.com/work/rnr/): A rebranded client portal and affiliate login for an education business.
+- [Visage Surgery Clinic](https://dennisakinbobola.com/work/visage/): A conversion-focused clinic website with appointment requests flowing into the CRM.
+- [Oasis Orthodontics](https://dennisakinbobola.com/work/oasis/): A bright practice website with schedule-now calls to action and treatment sections.
+- [Pearlymedia Optometry](https://dennisakinbobola.com/work/pearly/): An optometry website presenting LASIK and eye-care services with clear booking paths.
+
+## Guides
+- [7 CRM automations every service business should switch on first](https://dennisakinbobola.com/blog/crm-automations-day-one/): Before you add AI or fancy dashboards, these are the automations that stop leads slipping through the cracks.
+- [AI agents inside your CRM: what they should and shouldn't do](https://dennisakinbobola.com/blog/ai-agents-in-your-crm/): An AI agent is only as good as the system it sits on. Here's how I scope agents that actually help a business.
+- [How to migrate to GoHighLevel without losing contacts, deals or funnels](https://dennisakinbobola.com/blog/migrate-to-gohighlevel/): I've moved clients from Salesforce, Pipedrive and Systeme.io into HighLevel. This is the checklist I follow.
+- [Speed to lead: building a CRM that replies before your competitor does](https://dennisakinbobola.com/blog/speed-to-lead/): The business that responds first usually gets the conversation. Here's how to make your CRM respond in seconds.
+- [A2P 10DLC explained for business owners who just want their texts delivered](https://dennisakinbobola.com/blog/a2p-10dlc-explained/): If your business texts US customers from a local number, registration isn't optional. Here's what it means in plain English.
+- [White-labelling HighLevel: how agencies make the CRM feel like their own product](https://dennisakinbobola.com/blog/white-label-crm-agencies/): Branding, snapshots and client portals turn HighLevel into a product your clients recognise as yours.
+
+## Frequently asked questions
+### Who is Dennis Akinbobola?
+Dennis Akinbobola is a GoHighLevel Solutions Architect and HighLevel Certified Admin based in Lagos, Nigeria. He builds CRM systems, workflow automations, integrations and AI voice and chat agents for service businesses, coaches and agencies in the US, Europe and Australia, and is Top Rated Plus on Upwork with over 60 completed jobs.
+
+### Can you set up a GoHighLevel AI voice agent or AI receptionist?
+Yes. I build AI receptionists and voice agents that answer calls, qualify callers, answer FAQs and book appointments into your calendar, using GoHighLevel Voice AI, Vapi, Retell or Synthflow, connected to your pipelines and follow-up workflows.
+
+### What kinds of businesses do you build for?
+Mostly appointment-based service businesses such as med spas, chiropractors and clinics, plus coaches and course creators, and agencies that need white-label GoHighLevel builds for their own clients.
+
+### What does a project look like?
+We start with a short discovery call and a review of your current CRM. Then I scope a fixed-price build, set up the pipelines, automations, integrations and AI, test every path end to end, and hand over with a walkthrough.
+
+### Do you work with clients in US time zones?
+Yes. Most of my clients are in the US, with others in Europe and Australia. Calls are booked in your own time zone, and builds are delivered and tested remotely inside your account.
+
+### Which CRMs and tools do you work with?
+Mostly GoHighLevel, where I'm a HighLevel Certified Admin. I also work with HubSpot, Salesforce, Pipedrive, Monday.com and Systeme.io, and integrate through Zapier, Make, n8n, webhooks and APIs.
+
+### Do you build AI agents?
+Yes. I build AI agents that reply to leads, answer questions from a knowledge base, qualify, book appointments and update the CRM. I use GoHighLevel's Conversation AI, Voice AI and AI Employee, custom agents with OpenAI orchestrated in n8n or Make, and voice agents on Vapi, Retell and Synthflow.
+
+### Is pricing fixed or hourly?
+Builds are fixed-price and scoped up front. Ongoing CRM management and small fixes can run hourly or as a monthly care plan.
+
+### Can you fix a CRM someone else built?
+Yes. A lot of my work is taking over existing builds, auditing them, fixing what's broken and verifying everything end to end.
+
+### Can you migrate my data into HighLevel?
+Yes. I've moved clients from Salesforce, Pipedrive and Systeme.io into HighLevel, including contacts, pipelines, funnels and automations.
+
+### Who owns the system at the end?
+You do. Everything is built inside your own account, with a handover guide and walkthrough, so nothing depends on me to keep running.
+
+### How do I get started?
+Book a call from my calendar or send a message through the contact form. It comes straight to my inbox, and I reply within 24 hours.
+
