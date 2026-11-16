@@ -238,14 +238,6 @@
 
 /* FOOTER */
 #dpx footer{position:relative;overflow:hidden;border-top:1px solid var(--line);padding-top:10px}
-#dpx .flinks{display:grid;grid-template-columns:repeat(3,1fr);position:relative;z-index:2}
-#dpx .flinks a{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;border-right:1px solid var(--line);font-size:15px;transition:.3s}
-#dpx .flinks a:last-child{border-right:0}
-#dpx .flinks a:hover{background:rgba(255,255,255,.04);color:var(--sky)}
-#dpx .fbig{font-family:"Inter Tight",sans-serif;font-weight:700;letter-spacing:-.06em;font-size:clamp(60px,12.5vw,210px);line-height:.85;text-align:center;color:rgba(255,255,255,.06);white-space:nowrap;margin:-10px 0 0;user-select:none}
-#dpx .fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 28px 30px;font-size:13.5px;color:var(--mute)}
-#dpx .fbot nav{display:flex;gap:22px;flex-wrap:wrap}
-#dpx .fbot a:hover{color:#fff}
 
 /* PAGE HEADER (inner pages) */
 #dpx .phead{min-height:72vh;display:flex;align-items:flex-end;padding:150px 0 70px;overflow:hidden;background:radial-gradient(60% 70% at 70% 110%,rgba(37,99,255,.85),rgba(37,99,255,.25) 50%,transparent 80%),linear-gradient(180deg,#02040a,#06102e)}
@@ -347,9 +339,7 @@
   #dpx .hero .left{margin-top:calc(110px + 30vw + 56svh)}
   #dpx .hero .right{margin-top:26px}
   #dpx .hero .fade{height:40%}
-  #dpx .flinks{grid-template-columns:1fr}
-  #dpx .flinks a{border-right:0;border-bottom:1px solid var(--line)}
-  #dpx .qa .a p{padding:0 22px 20px}
+      #dpx .qa .a p{padding:0 22px 20px}
   #dpx .qa button{grid-template-columns:34px 1fr 24px;text-align:left}
   #dpx form .two{grid-template-columns:1fr}
   #dpx .stack,#dpx .steps{grid-template-columns:1fr}
@@ -658,6 +648,23 @@
 #dpx .csec{margin:0 0 34px}#dpx .csec h3{font-size:24px;margin:0 0 12px}
 #dpx .csec p,#dpx .csec li{color:#b8c3dc;font-size:17px;line-height:1.7}#dpx .csec ul{padding-left:20px;margin:0}
 @media(max-width:700px){#dpx .csts{grid-template-columns:1fr}}
+
+/* footer */
+#dpx footer{padding-top:0}
+#dpx .fwrap{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:64px 28px 30px;display:grid;grid-template-columns:1.6fr 1fr 1.3fr 1fr;gap:40px}
+#dpx .fcol h4{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:6px 0 18px;font-weight:600}
+#dpx .fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+#dpx .fcol li{font-size:15px;line-height:1.4}
+#dpx .fcol li a{color:#cbd5e1;transition:color .2s}#dpx .fcol li a:hover{color:#fff}
+#dpx .fcol .fmute{color:var(--mute);font-size:13.5px;line-height:1.5;margin-top:4px}
+#dpx .flogo{display:inline-flex;align-items:center;gap:12px;font-size:19px}
+#dpx .fmark{width:34px;height:34px;display:inline-block}
+#dpx .fbrand p{color:var(--mute);font-size:15px;line-height:1.65;margin:16px 0 22px;max-width:380px}
+#dpx .fcta{display:inline-flex}
+#dpx .fbig{font-family:"Inter Tight",sans-serif;font-weight:700;letter-spacing:-.05em;font-size:clamp(44px,10.2vw,190px);line-height:.9;text-align:center;color:rgba(255,255,255,.05);white-space:nowrap;overflow:hidden;margin:10px 0 0;padding:0 12px;user-select:none;pointer-events:none}
+#dpx .fbot{border-top:1px solid var(--line);padding:20px 28px 28px;font-size:13.5px;color:var(--mute);text-align:center}
+@media(max-width:900px){#dpx .fwrap{grid-template-columns:1fr 1fr;gap:34px 24px}#dpx .fbrand{grid-column:1/-1}}
+@media(max-width:600px){#dpx .fwrap{grid-template-columns:1fr;padding-top:48px}#dpx .fbot{padding-bottom:150px}}
 /* ===== Aaron — premium AI assistant (chat + voice) ===== */
 #dpx .ai-launch{position:fixed;right:22px;bottom:22px;z-index:70;display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border-radius:999px;border:1px solid rgba(124,196,255,.35);background:linear-gradient(135deg,rgba(13,24,58,.92),rgba(6,10,24,.92));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff;cursor:pointer;box-shadow:0 14px 50px rgba(37,99,255,.45),inset 0 1px 0 rgba(255,255,255,.08);transition:transform .45s var(--ease),box-shadow .45s var(--ease),opacity .3s}
 #dpx .ai-launch:hover{transform:translateY(-3px);box-shadow:0 18px 60px rgba(37,99,255,.65),inset 0 1px 0 rgba(255,255,255,.1)}
@@ -842,10 +849,16 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
   
   
   <a href="/work/pearly/" class="nextp" data-route="work" data-to="p-pearly"><span class="mute">Next project</span><b>Pearlymedia Optometry →</b></a>
-</div></section></div></div><footer><div class="flinks"><a href="https://www.linkedin.com/in/dennis-akinbobola" data-cfg="linkedin" target="_blank" rel="noopener">LinkedIn <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></a><a href="https://www.upwork.com/freelancers/~01dc0d1a878ab919c3" data-upwork target="_blank" rel="noopener">Upwork <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></a><a href="/contact/#book" data-route="contact" data-anchor="book">Book a Call <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></a></div>
-  <div class="fbig">Dennis Akinbobola</div>
-  <div class="fbot"><span style="display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;display:inline-block"><svg viewBox="0 0 100 100" role="img" aria-label="Dennis Akinbobola logo"><path d="M60 14 H42 A20 20 0 0 0 42 54 H60 Z" fill="#60A5FA"/><rect x="56" y="14" width="26" height="8" rx="2" fill="#60A5FA"/><rect x="56" y="14" width="8" height="62" rx="2" fill="#60A5FA"/><rect x="74" y="14" width="8" height="62" rx="2" fill="#60A5FA"/><path d="M60 80 V86 M78 80 V86 M60 86 H78" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="88" r="5" fill="#FFFFFF"/><circle cx="78" cy="88" r="5" fill="#FFFFFF"/></svg></span>© <span id="dpx-yr"></span> Dennis Akinbobola · CRM Developer &amp; AI Automation Architect</span>
-  <nav><a href="/work/" data-route="work">Work</a><a href="/services/" data-route="services">Services</a><a href="/gallery/" data-route="gallery">Gallery</a><a href="/about/" data-route="about">About</a><a href="/blog/" data-route="blog">Blog</a><a href="/contact/" data-route="contact">Contact</a><a data-mail></a><a data-tel></a><a href="#" data-wa>WhatsApp</a></nav></div></footer><a class="wa-fab" href="#" data-wa aria-label="Message Dennis on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>WhatsApp me</span></a>
+</div></section></div></div><footer><div class="fwrap">
+  <div class="fcol fbrand"><a href="/" class="flogo" data-route="home" aria-label="Home"><span class="fmark"><svg viewBox="0 0 100 100" role="img" aria-label="Dennis Akinbobola logo"><path d="M60 14 H42 A20 20 0 0 0 42 54 H60 Z" fill="#60A5FA"/><rect x="56" y="14" width="26" height="8" rx="2" fill="#60A5FA"/><rect x="56" y="14" width="8" height="62" rx="2" fill="#60A5FA"/><rect x="74" y="14" width="8" height="62" rx="2" fill="#60A5FA"/><path d="M60 80 V86 M78 80 V86 M60 86 H78" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="88" r="5" fill="#FFFFFF"/><circle cx="78" cy="88" r="5" fill="#FFFFFF"/></svg></span><b>Dennis Akinbobola</b></a>
+    <p>GoHighLevel expert and HighLevel Certified Admin. I build CRM systems, automations and AI voice and chat agents for service businesses, coaches and agencies.</p>
+    <a href="/contact/#book" class="btn btn-blue fcta" data-route="contact" data-anchor="book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> Book a free call</a></div>
+  <div class="fcol"><h4>Pages</h4><ul><li><a href="/" data-route="home">Home</a></li><li><a href="/work/" data-route="work">Work</a></li><li><a href="/services/" data-route="services">Services</a></li><li><a href="/gallery/" data-route="gallery">Gallery</a></li><li><a href="/about/" data-route="about">About</a></li><li><a href="/blog/" data-route="blog">Blog</a></li><li><a href="/contact/" data-route="contact">Contact</a></li></ul></div>
+  <div class="fcol"><h4>Contact</h4><ul><li><a data-mail></a></li><li><a data-tel></a></li><li><a href="#" data-wa>WhatsApp</a></li><li class="fmute">Lagos, Nigeria · serving the US, Europe &amp; Australia</li></ul></div>
+  <div class="fcol"><h4>Profiles</h4><ul><li><a href="https://www.linkedin.com/in/dennis-akinbobola" data-cfg="linkedin" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.upwork.com/freelancers/~01dc0d1a878ab919c3" data-upwork target="_blank" rel="noopener">Upwork</a></li><li><a href="/go/highlevel/" rel="sponsored nofollow" target="_blank">Try HighLevel</a></li></ul></div>
+</div>
+<div class="fbig" aria-hidden="true">Dennis Akinbobola</div>
+<div class="fbot"><span>© <span id="dpx-yr"></span> Dennis Akinbobola · GoHighLevel Expert &amp; AI Automation Architect</span></div></footer><a class="wa-fab" href="#" data-wa aria-label="Message Dennis on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>WhatsApp me</span></a>
 <div class="wa-modal" aria-hidden="true"><div class="wa-bg" data-wa-close></div><form class="wa-box" data-wa-form>
 <button type="button" class="wa-x" data-wa-close aria-label="Close">×</button>
 <div class="wa-hd"><span class="wa-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></span><div><b>Message Dennis on WhatsApp</b><small>Fill this in and WhatsApp opens with your message ready to send.</small></div></div>
