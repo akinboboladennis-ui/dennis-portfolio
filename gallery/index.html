@@ -1072,7 +1072,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
       var kind=card.getAttribute('data-video');
       if(kind==='youtube'&&C.videoYoutubeId){p.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+C.videoYoutubeId+'?autoplay=1&rel=0&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';}
       else if(C.videoSrc){p.innerHTML='<video src="'+C.videoSrc+'" controls autoplay playsinline></video>';}
-      else if(SPA){p.innerHTML='<div class="vnote">The video plays right here on your live site.<br><small>Claude\'s preview blocks embedded players.</small></div>';card.classList.remove('playing');}
+      else if(SPA){p.innerHTML='<div class="vnote">The video plays right here on your live site.<br><small>If it doesn\'t load, refresh the page.</small></div>';card.classList.remove('playing');}
       else{p.innerHTML='<iframe src="https://drive.google.com/file/d/'+C.videoDriveId+'/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>';}
     });});
 
