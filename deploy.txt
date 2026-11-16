@@ -1,1 +1,1 @@
-Site deploy stamp: 2026-11-16 (webp)
+Site deploy stamp: 2026-11-16 (aff)

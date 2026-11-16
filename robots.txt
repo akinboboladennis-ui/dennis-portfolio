@@ -53,5 +53,6 @@ Disallow: /
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /go/
 
 Sitemap: https://dennisakinbobola.com/sitemap.xml
