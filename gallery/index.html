@@ -665,6 +665,7 @@
 #dpx .fbot{border-top:1px solid var(--line);padding:20px 28px 28px;font-size:13.5px;color:var(--mute);text-align:center}
 @media(max-width:900px){#dpx .fwrap{grid-template-columns:1fr 1fr;gap:34px 24px}#dpx .fbrand{grid-column:1/-1}}
 @media(max-width:600px){#dpx .fwrap{grid-template-columns:1fr;padding-top:48px}#dpx .fbot{padding-bottom:150px}}
+#dpx .hero .n1{z-index:2}
 /* ===== Aaron — premium AI assistant (chat + voice) ===== */
 #dpx .ai-launch{position:fixed;right:22px;bottom:22px;z-index:70;display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border-radius:999px;border:1px solid rgba(124,196,255,.35);background:linear-gradient(135deg,rgba(13,24,58,.92),rgba(6,10,24,.92));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff;cursor:pointer;box-shadow:0 14px 50px rgba(37,99,255,.45),inset 0 1px 0 rgba(255,255,255,.08);transition:transform .45s var(--ease),box-shadow .45s var(--ease),opacity .3s}
 #dpx .ai-launch:hover{transform:translateY(-3px);box-shadow:0 18px 60px rgba(37,99,255,.65),inset 0 1px 0 rgba(255,255,255,.1)}
@@ -1136,7 +1137,7 @@ window.DPX_CONFIG.IMG_BASE="/img/";window.DPX_CONFIG.routes={"home": "/", "work"
       $$('[data-list]',pg).forEach(function(l){l.hidden=!!detail});
       $$('[data-detail]',pg).forEach(function(d){d.hidden=(d!==detail)});
       if(anchorEl)setTimeout(function(){anchorEl.scrollIntoView({behavior:instant?'auto':'smooth'})},60);else window.scrollTo(0,0);
-      if(!C.initial){var t=detail&&$('h1',detail);document.title=(t?t.textContent+' · ':'')+(C.siteTitle||'Dennis Akinbobola');}
+      if(SPA){var t=detail&&$('h1',detail);document.title=(t?t.textContent+' · ':'')+(C.siteTitle||'Dennis Akinbobola');}
       onScroll();
     }
     function go(){var h=decodeURIComponent(location.hash.slice(1));
