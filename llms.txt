@@ -35,6 +35,7 @@ Key facts:
 - [Pearlymedia Optometry](https://dennisakinbobola.com/work/pearly/): An optometry website presenting LASIK and eye-care services with clear booking paths.
 
 ## Guides
+- [Med spa leads not booking? The follow-up system that took one spa from 10% to 40%](https://dennisakinbobola.com/blog/med-spa-leads-not-booking/): Most med spa leads don't say no. They just never hear back fast enough, often enough. Here's the GoHighLevel follow-up I built that took one spa's lead-to-booking rate from 10% to 40%.
 - [7 CRM automations every service business should switch on first](https://dennisakinbobola.com/blog/crm-automations-day-one/): Before you add AI or fancy dashboards, these are the automations that stop leads slipping through the cracks.
 - [AI agents inside your CRM: what they should and shouldn't do](https://dennisakinbobola.com/blog/ai-agents-in-your-crm/): An AI agent is only as good as the system it sits on. Here's how I scope agents that actually help a business.
 - [How to migrate to GoHighLevel without losing contacts, deals or funnels](https://dennisakinbobola.com/blog/migrate-to-gohighlevel/): I've moved clients from Salesforce, Pipedrive and Systeme.io into HighLevel. This is the checklist I follow.
