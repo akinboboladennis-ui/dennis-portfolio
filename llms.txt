@@ -21,6 +21,8 @@ Key facts:
 ## Case studies
 - [Zero Leak Pipeline for a Med Spa](https://dennisakinbobola.com/work/medspa/): A two-phase GoHighLevel follow-up system that took a med spa from 10% to 40% of new leads booking an appointment.
 - [AI Receptionist & DM Agent for a Home Organizing Business](https://dennisakinbobola.com/work/organizer/): A GoHighLevel Voice AI receptionist on the business line, plus Conversation AI agents that answer SMS, email, Instagram and Facebook messages and steer leads to a virtual consultation.
+- [AI Voice Agents for a Lead-Generation Agency](https://dennisakinbobola.com/work/synthflow/): Seven Synthflow voice assistants connected to the agency's HighLevel account: inbound receptionists, outbound appointment schedulers and an appointment reminder caller.
+- [Course Library for a Trading Academy](https://dennisakinbobola.com/work/course/): A members' course library on a HighLevel white-label platform, with options, futures and forex programs split into live and on-demand tiers.
 - [The Short Diet](https://dennisakinbobola.com/work/shortdiet/): A complete HighLevel funnel for a new diet-coaching business, built to test six Meta ad angles and show exactly which one brings in qualified leads.
 - [Value Engines](https://dennisakinbobola.com/work/valueengines/): A white-labelled agency workspace: branded dashboard and menus, brand boards and a clean sub-account structure.
 - [CloseBot AI for Orthodontic Clinics](https://dennisakinbobola.com/work/closebot/): A custom CloseBot AI assistant connected to HighLevel to reply to leads and move them toward booked consultations.
